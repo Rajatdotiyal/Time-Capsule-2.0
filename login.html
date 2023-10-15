@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Login</title>
+  
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm" onsubmit="submitForm(event)">
+      <h2>Login to Quiz</h2>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div class="bott">
+      <h5>Forgot password?</h5>
+    </div>
+    <div class="bott2">
+      <h4>Don't have an account? <span><a href="#">Sign up</a></span></h4>
+    </div>
+  </div>
+  <!-- HTML form -->
+<form id="loginForm" onsubmit="submitForm(event)">
+  <label for="username">Username:</label>
+  <input type="text" id="username" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" required>
+
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+  function submitForm(event) {
+    event.preventDefault();
+    
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+  
+    // Redirect to the quiz page
+    window.location.href = 'quiz.html';
+  }
+</script>
+
+
+  <!-- <script src="script1.js"></script> -->
+</body>
+</html>

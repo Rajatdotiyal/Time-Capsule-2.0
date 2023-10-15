@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>History Quiz</title>
+  <link rel="stylesheet" type="text/css" href="qstyles.css">
+</head>
+<body>
+  <div class="face">
+    <!-- <video autoplay loop muted plays-inline class="backvideo"><source src="images/background.mp4" type="video/mp4"></video> -->
+    <img src="logo.png" alt="Logo" width="150px" ><h1>Welcome to Quiz</h1>
+
+  </div>
+  <div class="quiz-container">
+    <h1>Quiz</h1>
+    <p id="question"></p>
+    <div id="choices">
+      <button onclick="checkAnswer(0)">Option 1</button>
+      <button onclick="checkAnswer(1)">Option 2</button>
+      <button onclick="checkAnswer(2)">Option 3</button>
+      <button onclick="checkAnswer(3)">Option 4</button>
+    </div>
+    <p id="score">Score: 0</p>
+    <button id="next-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+  </div>
+  <div class="back"><a href="Timecapsule2.0.html">Back to Home page</a></div>
+  <script src="qscript.js"></script>
+</body>
+</html>

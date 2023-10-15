@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <!-- <link rel="stylesheet" href=""> -->
+<head>
+  <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(loginbackground1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: images;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes images{
+    0%{
+        background: url(loginbackground1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    20%{
+      background: url(loginbackground2.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    40%{
+      background: url(loginbackground3.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    60%{
+      background: url(loginbackground4.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    80%{
+      background: url(loginbackground5.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    100%{
+      background: url(loginbackground6.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  
+  .container {
+    width: 400px;
+    height: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgb(238, 194, 128);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 96%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #462f2f;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #1e221e;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+
+    
+  </style>
+  <title></title>
+</head>
+<body>
+  <div class="container">
+
+    <h2>quiz login</h2>
+    <form action="login.php" method="post">
+      <div class="form-group">
+
+        <label>Username:</label>
+        <input type="text" name="username" required><br>
+      </div>
+      <div class="form-group">
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+      </div>
+      <button type="submit" value="Sign Up">Login </button>
+    </form>
+  </div>
+</body>
+</html>
